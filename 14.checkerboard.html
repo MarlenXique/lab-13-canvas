@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+
+	<canvas id="sketch" width="600" height="600">
+
+	</canvas>
+
+	<script>
+	function draw() {
+		var sketch = document.getElementById('sketch');
+		var context = sketch.getContext("2d");
+
+		for (i = 0; i < 8; i++){
+			if (i %2 == 0){
+				context.fillStyle = "#ffffff";
+				context.fillRect((i * 20), 20, 20, 20);
+				context.fillStyle = "#000000"; //purple just
+				context.fillRect((i * 20), 40, 20, 20);
+				context.fillStyle = "#ffffff";
+				context.fillRect((i * 20), 60, 20, 20);
+				context.fillStyle = "#000000";
+				context.fillRect((i * 20), 80, 20, 20);
+				context.fillStyle = "#ffffff";
+				context.fillRect((i * 20), 100, 20, 20);
+				context.fillStyle = "#000000";
+				context.fillRect((i * 20), 120, 20, 20);
+				context.fillStyle = "#ffffff";
+				context.fillRect((i * 20), 140, 20, 20);
+				context.fillStyle = "#000000";
+				context.fillRect((i * 20), 160, 20, 20);
+
+
+				context.fillStyle = "#0000ff";
+				context.beginPath();
+				context.arc((i * 20 + 9), 50, 6, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				context.fillStyle = "#00ff00";
+				context.beginPath();
+				context.arc((i * 20 + 9), 130, 6, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+				context.fillStyle = "#00ff00";
+				context.beginPath();
+				context.arc((i * 20 + 9), 170, 6, 0, 2 * Math.PI, true);
+				context.closePath();
+				context.fill();
+
+
+				// context.arc(x, y, radius, start angle, end angle, clockwise);
+
+
+		} else {
+			context.fillStyle = "#ffffff"; //purple just
+			context.fillRect((i * 20), 40, 20, 20);
+			context.fillStyle = "#000000";
+			context.fillRect((i * 20), 60, 20, 20);
+			context.fillStyle = "#ffffff";
+			context.fillRect((i * 20), 80, 20, 20);
+			context.fillStyle = "#000000";
+			context.fillRect((i * 20), 100, 20, 20);
+			context.fillStyle = "#ffffff";
+			context.fillRect((i * 20), 120, 20, 20);
+			context.fillStyle = "#000000";
+			context.fillRect((i * 20), 140, 20, 20);
+			context.fillStyle = "#ffffff";
+			context.fillRect((i * 20), 160, 20, 20);
+			context.fillStyle = "#000000";
+			context.fillRect((i * 20), 20, 20, 20);
+
+
+
+
+			context.fillStyle = "#0000ff";
+			context.beginPath();
+			context.arc((i * 20 + 9), 30, 6, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+			context.fillStyle = "#0000ff";
+			context.beginPath();
+			context.arc((i * 20 + 9), 70, 6, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+			context.fillStyle = "#00ff00";
+			context.beginPath();
+			context.arc((i * 20 + 9), 150, 6, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+
+
+
+			//Having trouble with y
+		}
+	}
+}
+	</script>
+
+</body>
+</html>
