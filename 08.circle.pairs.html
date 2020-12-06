@@ -1,0 +1,82 @@
+<!-- https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#10.0
+https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16.0
+	—Each shape you create draws on top of all of your previous drawwings.
+	—In this case, the green circle is drawn over the black square:
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+
+	<canvas id="sketch" width="600" height="600">
+
+	</canvas>
+
+	<script>
+		function draw() {
+		 	var sketch = document.getElementById('sketch');
+			var context = sketch.getContext("2d");
+
+
+
+      context.fillStyle = "#0080ff";
+
+      context.beginPath();
+      context.arc(200, 200, 200, 0, 2 * Math.PI, true);
+        // context.arc(x, y, radius, start angle, end angle, clockwise);
+      context.closePath();
+      context.fill();
+
+
+      context.fillStyle = "#1a8cff";
+
+      context.beginPath();
+      context.arc(200, 200, 175, 0, 2 * Math.PI, true);
+        // context.arc(x, y, radius, start angle, end angle, clockwise);
+      context.closePath();
+      context.fill();
+
+      context.fillStyle = "#3399ff";
+
+      context.beginPath();
+      context.arc(200, 200, 150, 0, 2 * Math.PI, true);
+        // context.arc(x, y, radius, start angle, end angle, clockwise);
+      context.closePath();
+      context.fill();
+
+
+      context.fillStyle = "#4da6ff";
+
+      context.beginPath();
+      context.arc(200, 200, 125, 0, 2 * Math.PI, true);
+        // context.arc(x, y, radius, start angle, end angle, clockwise);
+      context.closePath();
+      context.fill();
+
+
+      context.fillStyle = "#66b3ff";
+
+      context.beginPath();
+      context.arc(200, 200, 100, 0, 2 * Math.PI, true);
+        // context.arc(x, y, radius, start angle, end angle, clockwise);
+      context.closePath();
+      context.fill();
+
+      context.fillStyle = "#80bfff";
+
+      context.beginPath();
+      context.arc(200, 200, 75, 0, 2 * Math.PI, true);
+        // context.arc(x, y, radius, start angle, end angle, clockwise);
+      context.closePath();
+      context.fill();
+
+
+
+		}
+
+	</script>
+
+</body>
+</html>
